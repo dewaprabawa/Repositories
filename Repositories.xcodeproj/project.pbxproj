@@ -10,12 +10,22 @@
 		2DA866911FB4CF7F14C1A239 /* Pods_Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953CC2B317B877D23873DE0E /* Pods_Repositories.framework */; };
 		69591C6E29698C0F00FA249E /* Repositories.docc in Sources */ = {isa = PBXBuildFile; fileRef = 69591C6D29698C0F00FA249E /* Repositories.docc */; };
 		69591C6F29698C0F00FA249E /* Repositories.h in Headers */ = {isa = PBXBuildFile; fileRef = 69591C6C29698C0F00FA249E /* Repositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69591C7A296990C300FA249E /* GameMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591C75296990C200FA249E /* GameMapper.swift */; };
+		69591C7B296990C300FA249E /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591C76296990C200FA249E /* SearchRepository.swift */; };
+		69591C7C296990C300FA249E /* FavouriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591C77296990C200FA249E /* FavouriteRepository.swift */; };
+		69591C7D296990C300FA249E /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591C78296990C200FA249E /* GameRepository.swift */; };
+		69591C7E296990C300FA249E /* FavMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591C79296990C200FA249E /* FavMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		69591C6929698C0F00FA249E /* Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69591C6C29698C0F00FA249E /* Repositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repositories.h; sourceTree = "<group>"; };
 		69591C6D29698C0F00FA249E /* Repositories.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Repositories.docc; sourceTree = "<group>"; };
+		69591C75296990C200FA249E /* GameMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMapper.swift; sourceTree = "<group>"; };
+		69591C76296990C200FA249E /* SearchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		69591C77296990C200FA249E /* FavouriteRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteRepository.swift; sourceTree = "<group>"; };
+		69591C78296990C200FA249E /* GameRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
+		69591C79296990C200FA249E /* FavMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavMapper.swift; sourceTree = "<group>"; };
 		7387B2AEEF71881118507AE2 /* Pods-Repositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repositories.debug.xcconfig"; path = "Target Support Files/Pods-Repositories/Pods-Repositories.debug.xcconfig"; sourceTree = "<group>"; };
 		953CC2B317B877D23873DE0E /* Pods_Repositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C938496F85FE3531F23EB5 /* Pods-Repositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repositories.release.xcconfig"; path = "Target Support Files/Pods-Repositories/Pods-Repositories.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,7 +49,6 @@
 				7387B2AEEF71881118507AE2 /* Pods-Repositories.debug.xcconfig */,
 				B2C938496F85FE3531F23EB5 /* Pods-Repositories.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,11 @@
 		69591C6B29698C0F00FA249E /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				69591C79296990C200FA249E /* FavMapper.swift */,
+				69591C77296990C200FA249E /* FavouriteRepository.swift */,
+				69591C75296990C200FA249E /* GameMapper.swift */,
+				69591C78296990C200FA249E /* GameRepository.swift */,
+				69591C76296990C200FA249E /* SearchRepository.swift */,
 				69591C6C29698C0F00FA249E /* Repositories.h */,
 				69591C6D29698C0F00FA249E /* Repositories.docc */,
 			);
@@ -183,6 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69591C7B296990C300FA249E /* SearchRepository.swift in Sources */,
+				69591C7C296990C300FA249E /* FavouriteRepository.swift in Sources */,
+				69591C7E296990C300FA249E /* FavMapper.swift in Sources */,
+				69591C7D296990C300FA249E /* GameRepository.swift in Sources */,
+				69591C7A296990C300FA249E /* GameMapper.swift in Sources */,
 				69591C6E29698C0F00FA249E /* Repositories.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
