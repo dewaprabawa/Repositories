@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "Core"
+  spec.name         = "Repositories"
   spec.version      = "0.0.1"
   spec.summary      = "A short description of Core."
 
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+                   this is repository module to provide the data from data source to ui
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/Core"
+  spec.homepage     = "https://github.com/dewaprabawa/Repositories"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE"}
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,11 +64,11 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
+  spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "13.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/Core.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/dewaprabawa/Repositories.git", :tag => "#{spec.version}" , :branch => "main"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -129,9 +130,16 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "ReachabilitySwift"
+  spec.dependency "RxSwift", "6.5.0"
+  spec.dependency "RxCocoa", "6.5.0"
+  spec.dependency "RealmSwift", "6.5.0"
+  spec.dependency 'DataSource', :git => 'https://github.com/dewaprabawa/DataSource.git', :tag => '0.0.1',:branch => 'main' 
+  
+
 
 end
